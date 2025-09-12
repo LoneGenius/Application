@@ -77,45 +77,45 @@ export default function HomePage() {
           >
             Career Pathways
           </Link>
-        </div>
+        </div> <b/>
+
+          {/* Feature cards */}
+          <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            {[
+              {
+                icon: Rocket,
+                title: 'Your Path Forward',
+                desc: 'Clear, inclusive career roadmaps designed for every background.',
+              },
+              {
+                icon: Star,
+                title: 'Skill Building',
+                desc: 'Master the skills employers value most with guided learning.',
+              },
+              {
+                icon: Users,
+                title: 'Support & Guidance',
+                desc: 'Get personalized advice and mentorship along your journey.',
+              },
+            ].map(({ icon: Icon, title, desc }, i) => (
+              <motion.div
+                key={title}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.2, duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+              >
+                <Icon className="text-indigo-600 mb-6" size={42} />
+                <h2 className="text-2xl font-bold text-indigo-700">{title}</h2>
+                <p className="mt-3 text-gray-700 text-lg">{desc}</p>
+              </motion.div>
+            ))}
+          </section> <br /> 
       </section>
 
-      {/* Feature cards */}
-      <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-        {[
-          {
-            icon: Rocket,
-            title: 'Your Path Forward',
-            desc: 'Clear, inclusive career roadmaps designed for every background.',
-          },
-          {
-            icon: Star,
-            title: 'Skill Building',
-            desc: 'Master the skills employers value most with guided learning.',
-          },
-          {
-            icon: Users,
-            title: 'Support & Guidance',
-            desc: 'Get personalized advice and mentorship along your journey.',
-          },
-        ].map(({ icon: Icon, title, desc }, i) => (
-          <motion.div
-            key={title}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.2, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-          >
-            <Icon className="text-indigo-600 mb-6" size={42} />
-            <h2 className="text-2xl font-bold text-indigo-700">{title}</h2>
-            <p className="mt-3 text-gray-700 text-lg">{desc}</p>
-          </motion.div>
-        ))}
-      </section> <br /> 
-
       {/* Overview dashboard cards */}
-      <section className="bg-white shadow-lg rounded-xl p-12 mb-20 max-w-6xl mx-auto">
+      <section className="bg-white shadow-lg rounded-xl p-12 mb-20 max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-indigo-700 mb-12">🎓 Graduates Pathways Overview</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
