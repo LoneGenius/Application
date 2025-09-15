@@ -1,0 +1,625 @@
+State,Year,Quarter,Month,median wages
+Johor,2022,Q1,Jan,2344
+Kedah,2022,Q1,Jan,1700
+Kelantan,2022,Q1,Jan,1422
+Melaka,2022,Q1,Jan,2267
+Negeri Sembilan,2022,Q1,Jan,2127
+Pahang,2022,Q1,Jan,1811
+Perak,2022,Q1,Jan,2000
+Perlis,2022,Q1,Jan,1467
+Pulau Pinang,2022,Q1,Jan,2678
+Sabah,2022,Q1,Jan,1667
+Sarawak ,2022,Q1,Jan,1964
+Selangor,2022,Q1,Jan,2944
+Terengganu,2022,Q1,Jan,1682
+W.P Kuala Lumpur,2022,Q1,Jan,3822
+W.P Labuan,2022,Q1,Jan,1827
+W.P Putrajaya,2022,Q1,Jan,2322
+Johor,2022,Q1,Feb,2089
+Kedah,2022,Q1,Feb,1600
+Kelantan,2022,Q1,Feb,1389
+Melaka,2022,Q1,Feb,2044
+Negeri Sembilan,2022,Q1,Feb,2000
+Pahang,2022,Q1,Feb,1745
+Perak,2022,Q1,Feb,1764
+Perlis,2022,Q1,Feb,1400
+Pulau Pinang,2022,Q1,Feb,2344
+Sabah,2022,Q1,Feb,1564
+Sarawak ,2022,Q1,Feb,1800
+Selangor,2022,Q1,Feb,2700
+Terengganu,2022,Q1,Feb,1645
+W.P Kuala Lumpur,2022,Q1,Feb,3600
+W.P Labuan,2022,Q1,Feb,1764
+W.P Putrajaya,2022,Q1,Feb,2289
+Johor,2022,Q1,Mar,2100
+Kedah,2022,Q1,Mar,1600
+Kelantan,2022,Q1,Mar,1400
+Melaka,2022,Q1,Mar,2027
+Negeri Sembilan,2022,Q1,Mar,2082
+Pahang,2022,Q1,Mar,1800
+Perak,2022,Q1,Mar,1800
+Perlis,2022,Q1,Mar,1400
+Pulau Pinang,2022,Q1,Mar,2382
+Sabah,2022,Q1,Mar,1567
+Sarawak ,2022,Q1,Mar,1800
+Selangor,2022,Q1,Mar,2700
+Terengganu,2022,Q1,Mar,1667
+W.P Kuala Lumpur,2022,Q1,Mar,3700
+W.P Labuan,2022,Q1,Mar,1789
+W.P Putrajaya,2022,Q1,Mar,2564
+Johor,2022,Q2,Apr,2200
+Kedah,2022,Q2,Apr,1633
+Kelantan,2022,Q2,Apr,1444
+Melaka,2022,Q2,Apr,2122
+Negeri Sembilan,2022,Q2,Apr,2064
+Pahang,2022,Q2,Apr,1864
+Perak,2022,Q2,Apr,1800
+Perlis,2022,Q2,Apr,1422
+Pulau Pinang,2022,Q2,Apr,2467
+Sabah,2022,Q2,Apr,1622
+Sarawak ,2022,Q2,Apr,1845
+Selangor,2022,Q2,Apr,2827
+Terengganu,2022,Q2,Apr,1733
+W.P Kuala Lumpur,2022,Q2,Apr,3867
+W.P Labuan,2022,Q2,Apr,1800
+W.P Putrajaya,2022,Q2,Apr,2344
+Johor,2022,Q2,May,2182
+Kedah,2022,Q2,May,1700
+Kelantan,2022,Q2,May,1500
+Melaka,2022,Q2,May,2167
+Negeri Sembilan,2022,Q2,May,2067
+Pahang,2022,Q2,May,1867
+Perak,2022,Q2,May,1845
+Perlis,2022,Q2,May,1522
+Pulau Pinang,2022,Q2,May,2427
+Sabah,2022,Q2,May,1700
+Sarawak ,2022,Q2,May,1922
+Selangor,2022,Q2,May,2745
+Terengganu,2022,Q2,May,1764
+W.P Kuala Lumpur,2022,Q2,May,3600
+W.P Labuan,2022,Q2,May,1822
+W.P Putrajaya,2022,Q2,May,2322
+Johor,2022,Q2,Jun,2200
+Kedah,2022,Q2,Jun,1744
+Kelantan,2022,Q2,Jun,1544
+Melaka,2022,Q2,Jun,2200
+Negeri Sembilan,2022,Q2,Jun,2133
+Pahang,2022,Q2,Jun,1900
+Perak,2022,Q2,Jun,1882
+Perlis,2022,Q2,Jun,1556
+Pulau Pinang,2022,Q2,Jun,2464
+Sabah,2022,Q2,Jun,1744
+Sarawak ,2022,Q2,Jun,1900
+Selangor,2022,Q2,Jun,2800
+Terengganu,2022,Q2,Jun,1789
+W.P Kuala Lumpur,2022,Q2,Jun,3600
+W.P Labuan,2022,Q2,Jun,1864
+W.P Putrajaya,2022,Q2,Jun,2300
+Johor,2022,Q3,Jul,2200
+Kedah,2022,Q3,Jul,1745
+Kelantan,2022,Q3,Jul,1500
+Melaka,2022,Q3,Jul,2127
+Negeri Sembilan,2022,Q3,Jul,2100
+Pahang,2022,Q3,Jul,1900
+Perak,2022,Q3,Jul,1845
+Perlis,2022,Q3,Jul,1545
+Pulau Pinang,2022,Q3,Jul,2445
+Sabah,2022,Q3,Jul,1727
+Sarawak ,2022,Q3,Jul,1900
+Selangor,2022,Q3,Jul,2727
+Terengganu,2022,Q3,Jul,1782
+W.P Kuala Lumpur,2022,Q3,Jul,3600
+W.P Labuan,2022,Q3,Jul,1867
+W.P Putrajaya,2022,Q3,Jul,2327
+Johor,2022,Q3,Aug,2200
+Kedah,2022,Q3,Aug,1727
+Kelantan,2022,Q3,Aug,1545
+Melaka,2022,Q3,Aug,2127
+Negeri Sembilan,2022,Q3,Aug,2127
+Pahang,2022,Q3,Aug,1927
+Perak,2022,Q3,Aug,1864
+Perlis,2022,Q3,Aug,1564
+Pulau Pinang,2022,Q3,Aug,2427
+Sabah,2022,Q3,Aug,1700
+Sarawak ,2022,Q3,Aug,1900
+Selangor,2022,Q3,Aug,2745
+Terengganu,2022,Q3,Aug,1800
+W.P Kuala Lumpur,2022,Q3,Aug,3582
+W.P Labuan,2022,Q3,Aug,1864
+W.P Putrajaya,2022,Q3,Aug,2327
+Johor,2022,Q3,Sep,2200
+Kedah,2022,Q3,Sep,1727
+Kelantan,2022,Q3,Sep,1564
+Melaka,2022,Q3,Sep,2109
+Negeri Sembilan,2022,Q3,Sep,2100
+Pahang,2022,Q3,Sep,1900
+Perak,2022,Q3,Sep,1864
+Perlis,2022,Q3,Sep,1564
+Pulau Pinang,2022,Q3,Sep,2478
+Sabah,2022,Q3,Sep,1727
+Sarawak ,2022,Q3,Sep,1900
+Selangor,2022,Q3,Sep,2764
+Terengganu,2022,Q3,Sep,1800
+W.P Kuala Lumpur,2022,Q3,Sep,3582
+W.P Labuan,2022,Q3,Sep,1864
+W.P Putrajaya,2022,Q3,Sep,2327
+Johor,2022,Q4,Oct,2227
+Kedah,2022,Q4,Oct,1745
+Kelantan,2022,Q4,Oct,1555
+Melaka,2022,Q4,Oct,2264
+Negeri Sembilan,2022,Q4,Oct,2127
+Pahang,2022,Q4,Oct,1909
+Perak,2022,Q4,Oct,1882
+Perlis,2022,Q4,Oct,1564
+Pulau Pinang,2022,Q4,Oct,2500
+Sabah,2022,Q4,Oct,1764
+Sarawak ,2022,Q4,Oct,1900
+Selangor,2022,Q4,Oct,2800
+Terengganu,2022,Q4,Oct,1800
+W.P Kuala Lumpur,2022,Q4,Oct,3627
+W.P Labuan,2022,Q4,Oct,1864
+W.P Putrajaya,2022,Q4,Oct,2327
+Johor,2022,Q4,Nov,2245
+Kedah,2022,Q4,Nov,1764
+Kelantan,2022,Q4,Nov,1564
+Melaka,2022,Q4,Nov,2245
+Negeri Sembilan,2022,Q4,Nov,2145
+Pahang,2022,Q4,Nov,1927
+Perak,2022,Q4,Nov,1900
+Perlis,2022,Q4,Nov,1564
+Pulau Pinang,2022,Q4,Nov,2500
+Sabah,2022,Q4,Nov,1727
+Sarawak ,2022,Q4,Nov,1900
+Selangor,2022,Q4,Nov,2800
+Terengganu,2022,Q4,Nov,1800
+W.P Kuala Lumpur,2022,Q4,Nov,3622
+W.P Labuan,2022,Q4,Nov,1864
+W.P Putrajaya,2022,Q4,Nov,2364
+Johor,2022,Q4,Dec,2500
+Kedah,2022,Q4,Dec,1882
+Kelantan,2022,Q4,Dec,1564
+Melaka,2022,Q4,Dec,2527
+Negeri Sembilan,2022,Q4,Dec,2400
+Pahang,2022,Q4,Dec,2000
+Perak,2022,Q4,Dec,2000
+Perlis,2022,Q4,Dec,1627
+Pulau Pinang,2022,Q4,Dec,3000
+Sabah,2022,Q4,Dec,1800
+Sarawak ,2022,Q4,Dec,2000
+Selangor,2022,Q4,Dec,3000
+Terengganu,2022,Q4,Dec,1900
+W.P Kuala Lumpur,2022,Q4,Dec,3945
+W.P Labuan,2022,Q4,Dec,2200
+W.P Putrajaya,2022,Q4,Dec,2400
+Johor,2023,Q1,Jan,2527
+Kedah,2023,Q1,Jan,1900
+Kelantan,2023,Q1,Jan,1600
+Melaka,2023,Q1,Jan,2491
+Negeri Sembilan,2023,Q1,Jan,2345
+Pahang,2023,Q1,Jan,2000
+Perak,2023,Q1,Jan,2145
+Perlis,2023,Q1,Jan,1645
+Pulau Pinang,2023,Q1,Jan,2964
+Sabah,2023,Q1,Jan,1864
+Sarawak ,2023,Q1,Jan,2100
+Selangor,2023,Q1,Jan,3067
+Terengganu,2023,Q1,Jan,1900
+W.P Kuala Lumpur,2023,Q1,Jan,4000
+W.P Labuan,2023,Q1,Jan,2000
+W.P Putrajaya,2023,Q1,Jan,2527
+Johor,2023,Q1,Feb,2327
+Kedah,2023,Q1,Feb,1800
+Kelantan,2023,Q1,Feb,1600
+Melaka,2023,Q1,Feb,2227
+Negeri Sembilan,2023,Q1,Feb,2227
+Pahang,2023,Q1,Feb,1964
+Perak,2023,Q1,Feb,1964
+Perlis,2023,Q1,Feb,1627
+Pulau Pinang,2023,Q1,Feb,2575
+Sabah,2023,Q1,Feb,1782
+Sarawak ,2023,Q1,Feb,1982
+Selangor,2023,Q1,Feb,2900
+Terengganu,2023,Q1,Feb,1882
+W.P Kuala Lumpur,2023,Q1,Feb,3827
+W.P Labuan,2023,Q1,Feb,1927
+W.P Putrajaya,2023,Q1,Feb,2500
+Johor,2023,Q1,Mar,2400
+Kedah,2023,Q1,Mar,1827
+Kelantan,2023,Q1,Mar,1600
+Melaka,2023,Q1,Mar,2264
+Negeri Sembilan,2023,Q1,Mar,2345
+Pahang,2023,Q1,Mar,2000
+Perak,2023,Q1,Mar,2000
+Perlis,2023,Q1,Mar,1627
+Pulau Pinang,2023,Q1,Mar,2627
+Sabah,2023,Q1,Mar,1782
+Sarawak ,2023,Q1,Mar,2000
+Selangor,2023,Q1,Mar,2964
+Terengganu,2023,Q1,Mar,1900
+W.P Kuala Lumpur,2023,Q1,Mar,3927
+W.P Labuan,2023,Q1,Mar,1900
+W.P Putrajaya,2023,Q1,Mar,2464
+Johor,2023,Q2,Apr,2400
+Kedah,2023,Q2,Apr,1864
+Kelantan,2023,Q2,Apr,1600
+Melaka,2023,Q2,Apr,2375
+Negeri Sembilan,2023,Q2,Apr,2282
+Pahang,2023,Q2,Apr,2027
+Perak,2023,Q2,Apr,2000
+Perlis,2023,Q2,Apr,1600
+Pulau Pinang,2023,Q2,Apr,2682
+Sabah,2023,Q2,Apr,1800
+Sarawak ,2023,Q2,Apr,2000
+Selangor,2023,Q2,Apr,3000
+Terengganu,2023,Q2,Apr,1882
+W.P Kuala Lumpur,2023,Q2,Apr,4064
+W.P Labuan,2023,Q2,Apr,1964
+W.P Putrajaya,2023,Q2,Apr,2782
+Johor,2023,Q2,May,2364
+Kedah,2023,Q2,May,1809
+Kelantan,2023,Q2,May,1600
+Melaka,2023,Q2,May,2282
+Negeri Sembilan,2023,Q2,May,2264
+Pahang,2023,Q2,May,2000
+Perak,2023,Q2,May,2000
+Perlis,2023,Q2,May,1600
+Pulau Pinang,2023,Q2,May,2600
+Sabah,2023,Q2,May,1800
+Sarawak ,2023,Q2,May,2000
+Selangor,2023,Q2,May,2882
+Terengganu,2023,Q2,May,1900
+W.P Kuala Lumpur,2023,Q2,May,3800
+W.P Labuan,2023,Q2,May,1927
+W.P Putrajaya,2023,Q2,May,2500
+Johor,2023,Q2,Jun,2382
+Kedah,2023,Q2,Jun,1845
+Kelantan,2023,Q2,Jun,1600
+Melaka,2023,Q2,Jun,2364
+Negeri Sembilan,2023,Q2,Jun,2282
+Pahang,2023,Q2,Jun,2000
+Perak,2023,Q2,Jun,2000
+Perlis,2023,Q2,Jun,1600
+Pulau Pinang,2023,Q2,Jun,2645
+Sabah,2023,Q2,Jun,1800
+Sarawak ,2023,Q2,Jun,2000
+Selangor,2023,Q2,Jun,2945
+Terengganu,2023,Q2,Jun,1900
+W.P Kuala Lumpur,2023,Q2,Jun,3822
+W.P Labuan,2023,Q2,Jun,1900
+W.P Putrajaya,2023,Q2,Jun,2500
+Johor,2023,Q3,Jul,2400
+Kedah,2023,Q3,Jul,1864
+Kelantan,2023,Q3,Jul,1600
+Melaka,2023,Q3,Jul,2282
+Negeri Sembilan,2023,Q3,Jul,2264
+Pahang,2023,Q3,Jul,2000
+Perak,2023,Q3,Jul,2000
+Perlis,2023,Q3,Jul,1600
+Pulau Pinang,2023,Q3,Jul,2627
+Sabah,2023,Q3,Jul,1800
+Sarawak ,2023,Q3,Jul,2000
+Selangor,2023,Q3,Jul,2900
+Terengganu,2023,Q3,Jul,1900
+W.P Kuala Lumpur,2023,Q3,Jul,3800
+W.P Labuan,2023,Q3,Jul,1945
+W.P Putrajaya,2023,Q3,Jul,2500
+Johor,2023,Q3,Aug,2400
+Kedah,2023,Q3,Aug,1827
+Kelantan,2023,Q3,Aug,1627
+Melaka,2023,Q3,Aug,2300
+Negeri Sembilan,2023,Q3,Aug,2264
+Pahang,2023,Q3,Aug,2000
+Perak,2023,Q3,Aug,2000
+Perlis,2023,Q3,Aug,1664
+Pulau Pinang,2023,Q3,Aug,2627
+Sabah,2023,Q3,Aug,1800
+Sarawak ,2023,Q3,Aug,2000
+Selangor,2023,Q3,Aug,2900
+Terengganu,2023,Q3,Aug,1900
+W.P Kuala Lumpur,2023,Q3,Aug,3800
+W.P Labuan,2023,Q3,Aug,1964
+W.P Putrajaya,2023,Q3,Aug,2500
+Johor,2023,Q3,Sep,2400
+Kedah,2023,Q3,Sep,1845
+Kelantan,2023,Q3,Sep,1600
+Melaka,2023,Q3,Sep,2282
+Negeri Sembilan,2023,Q3,Sep,2245
+Pahang,2023,Q3,Sep,2000
+Perak,2023,Q3,Sep,2000
+Perlis,2023,Q3,Sep,1627
+Pulau Pinang,2023,Q3,Sep,2645
+Sabah,2023,Q3,Sep,1800
+Sarawak ,2023,Q3,Sep,2000
+Selangor,2023,Q3,Sep,2900
+Terengganu,2023,Q3,Sep,1900
+W.P Kuala Lumpur,2023,Q3,Sep,3800
+W.P Labuan,2023,Q3,Sep,1964
+W.P Putrajaya,2023,Q3,Sep,2464
+Johor,2023,Q4,Oct,2427
+Kedah,2023,Q4,Oct,1864
+Kelantan,2023,Q4,Oct,1600
+Melaka,2023,Q4,Oct,2455
+Negeri Sembilan,2023,Q4,Oct,2264
+Pahang,2023,Q4,Oct,2000
+Perak,2023,Q4,Oct,2000
+Perlis,2023,Q4,Oct,1627
+Pulau Pinang,2023,Q4,Oct,2700
+Sabah,2023,Q4,Oct,1800
+Sarawak ,2023,Q4,Oct,2000
+Selangor,2023,Q4,Oct,2945
+Terengganu,2023,Q4,Oct,1900
+W.P Kuala Lumpur,2023,Q4,Oct,3800
+W.P Labuan,2023,Q4,Oct,2000
+W.P Putrajaya,2023,Q4,Oct,2482
+Johor,2023,Q4,Nov,2400
+Kedah,2023,Q4,Nov,1827
+Kelantan,2023,Q4,Nov,1600
+Melaka,2023,Q4,Nov,2400
+Negeri Sembilan,2023,Q4,Nov,2264
+Pahang,2023,Q4,Nov,2000
+Perak,2023,Q4,Nov,2000
+Perlis,2023,Q4,Nov,1627
+Pulau Pinang,2023,Q4,Nov,2682
+Sabah,2023,Q4,Nov,1800
+Sarawak ,2023,Q4,Nov,2000
+Selangor,2023,Q4,Nov,2964
+Terengganu,2023,Q4,Nov,1900
+W.P Kuala Lumpur,2023,Q4,Nov,3800
+W.P Labuan,2023,Q4,Nov,2000
+W.P Putrajaya,2023,Q4,Nov,2482
+Johor,2023,Q4,Dec,2673
+Kedah,2023,Q4,Dec,2000
+Kelantan,2023,Q4,Dec,1600
+Melaka,2023,Q4,Dec,2682
+Negeri Sembilan,2023,Q4,Dec,2482
+Pahang,2023,Q4,Dec,2082
+Perak,2023,Q4,Dec,2082
+Perlis,2023,Q4,Dec,1700
+Pulau Pinang,2023,Q4,Dec,3245
+Sabah,2023,Q4,Dec,1882
+Sarawak ,2023,Q4,Dec,2100
+Selangor,2023,Q4,Dec,3164
+Terengganu,2023,Q4,Dec,2000
+W.P Kuala Lumpur,2023,Q4,Dec,4045
+W.P Labuan,2023,Q4,Dec,2327
+W.P Putrajaya,2023,Q4,Dec,2482
+Johor,2024,Q1,Jan,2700
+Kedah,2024,Q1,Jan,1982
+Kelantan,2024,Q1,Jan,1645
+Melaka,2024,Q1,Jan,2522
+Negeri Sembilan,2024,Q1,Jan,2500
+Pahang,2024,Q1,Jan,2100
+Perak,2024,Q1,Jan,2200
+Perlis,2024,Q1,Jan,1700
+Pulau Pinang,2024,Q1,Jan,3033
+Sabah,2024,Q1,Jan,1945
+Sarawak ,2024,Q1,Jan,2200
+Selangor,2024,Q1,Jan,3245
+Terengganu,2024,Q1,Jan,1982
+W.P Kuala Lumpur,2024,Q1,Jan,4145
+W.P Labuan,2024,Q1,Jan,2100
+W.P Putrajaya,2024,Q1,Jan,2500
+Johor,2024,Q1,Feb,2500
+Kedah,2024,Q1,Feb,1964
+Kelantan,2024,Q1,Feb,1627
+Melaka,2024,Q1,Feb,2400
+Negeri Sembilan,2024,Q1,Feb,2327
+Pahang,2024,Q1,Feb,2082
+Perak,2024,Q1,Feb,2064
+Perlis,2024,Q1,Feb,1682
+Pulau Pinang,2024,Q1,Feb,2864
+Sabah,2024,Q1,Feb,1882
+Sarawak ,2024,Q1,Feb,2064
+Selangor,2024,Q1,Feb,3027
+Terengganu,2024,Q1,Feb,2000
+W.P Kuala Lumpur,2024,Q1,Feb,4000
+W.P Labuan,2024,Q1,Feb,2000
+W.P Putrajaya,2024,Q1,Feb,2482
+Johor,2024,Q1,Mar,2582
+Kedah,2024,Q1,Mar,1964
+Kelantan,2024,Q1,Mar,1645
+Melaka,2024,Q1,Mar,2500
+Negeri Sembilan,2024,Q1,Mar,2500
+Pahang,2024,Q1,Mar,2145
+Perak,2024,Q1,Mar,2082
+Perlis,2024,Q1,Mar,1682
+Pulau Pinang,2024,Q1,Mar,2827
+Sabah,2024,Q1,Mar,1882
+Sarawak ,2024,Q1,Mar,2064
+Selangor,2024,Q1,Mar,3164
+Terengganu,2024,Q1,Mar,2000
+W.P Kuala Lumpur,2024,Q1,Mar,4256
+W.P Labuan,2024,Q1,Mar,2000
+W.P Putrajaya,2024,Q1,Mar,2727
+Johor,2024,Q2,Apr,2500
+Kedah,2024,Q2,Apr,1927
+Kelantan,2024,Q2,Apr,1600
+Melaka,2024,Q2,Apr,2400
+Negeri Sembilan,2024,Q2,Apr,2345
+Pahang,2024,Q2,Apr,2100
+Perak,2024,Q2,Apr,2045
+Perlis,2024,Q2,Apr,1700
+Pulau Pinang,2024,Q2,Apr,2800
+Sabah,2024,Q2,Apr,1882
+Sarawak ,2024,Q2,Apr,2045
+Selangor,2024,Q2,Apr,3064
+Terengganu,2024,Q2,Apr,1982
+W.P Kuala Lumpur,2024,Q2,Apr,4073
+W.P Labuan,2024,Q2,Apr,2000
+W.P Putrajaya,2024,Q2,Apr,2500
+Johor,2024,Q2,May,2500
+Kedah,2024,Q2,May,1900
+Kelantan,2024,Q2,May,1645
+Melaka,2024,Q2,May,2382
+Negeri Sembilan,2024,Q2,May,2345
+Pahang,2024,Q2,May,2082
+Perak,2024,Q2,May,2045
+Perlis,2024,Q2,May,1682
+Pulau Pinang,2024,Q2,May,2800
+Sabah,2024,Q2,May,1882
+Sarawak ,2024,Q2,May,2082
+Selangor,2024,Q2,May,3000
+Terengganu,2024,Q2,May,2000
+W.P Kuala Lumpur,2024,Q2,May,3964
+W.P Labuan,2024,Q2,May,2000
+W.P Putrajaya,2024,Q2,May,2500
+Johor,2024,Q2,Jun,2500
+Kedah,2024,Q2,Jun,1900
+Kelantan,2024,Q2,Jun,1645
+Melaka,2024,Q2,Jun,2464
+Negeri Sembilan,2024,Q2,Jun,2400
+Pahang,2024,Q2,Jun,2100
+Perak,2024,Q2,Jun,2027
+Perlis,2024,Q2,Jun,1682
+Pulau Pinang,2024,Q2,Jun,2800
+Sabah,2024,Q2,Jun,1864
+Sarawak ,2024,Q2,Jun,2045
+Selangor,2024,Q2,Jun,3000
+Terengganu,2024,Q2,Jun,2000
+W.P Kuala Lumpur,2024,Q2,Jun,3982
+W.P Labuan,2024,Q2,Jun,2000
+W.P Putrajaya,2024,Q2,Jun,2500
+Johor,2024,Q3,Jul,2500
+Kedah,2024,Q3,Jul,1945
+Kelantan,2024,Q3,Jul,1627
+Melaka,2024,Q3,Jul,2400
+Negeri Sembilan,2024,Q3,Jul,2382
+Pahang,2024,Q3,Jul,2100
+Perak,2024,Q3,Jul,2045
+Perlis,2024,Q3,Jul,1682
+Pulau Pinang,2024,Q3,Jul,2800
+Sabah,2024,Q3,Jul,1882
+Sarawak ,2024,Q3,Jul,2064
+Selangor,2024,Q3,Jul,3000
+Terengganu,2024,Q3,Jul,2000
+W.P Kuala Lumpur,2024,Q3,Jul,4000
+W.P Labuan,2024,Q3,Jul,2000
+W.P Putrajaya,2024,Q3,Jul,2500
+Johor,2024,Q3,Aug,2500
+Kedah,2024,Q3,Aug,1900
+Kelantan,2024,Q3,Aug,1645
+Melaka,2024,Q3,Aug,2400
+Negeri Sembilan,2024,Q3,Aug,2382
+Pahang,2024,Q3,Aug,2082
+Perak,2024,Q3,Aug,2045
+Perlis,2024,Q3,Aug,1682
+Pulau Pinang,2024,Q3,Aug,2800
+Sabah,2024,Q3,Aug,1882
+Sarawak ,2024,Q3,Aug,2045
+Selangor,2024,Q3,Aug,3000
+Terengganu,2024,Q3,Aug,2000
+W.P Kuala Lumpur,2024,Q3,Aug,3964
+W.P Labuan,2024,Q3,Aug,2000
+W.P Putrajaya,2024,Q3,Aug,2500
+Johor,2024,Q3,Sep,2500
+Kedah,2024,Q3,Sep,1927
+Kelantan,2024,Q3,Sep,1682
+Melaka,2024,Q3,Sep,2400
+Negeri Sembilan,2024,Q3,Sep,2364
+Pahang,2024,Q3,Sep,2082
+Perak,2024,Q3,Sep,2045
+Perlis,2024,Q3,Sep,1682
+Pulau Pinang,2024,Q3,Sep,2800
+Sabah,2024,Q3,Sep,1882
+Sarawak ,2024,Q3,Sep,2064
+Selangor,2024,Q3,Sep,3000
+Terengganu,2024,Q3,Sep,2000
+W.P Kuala Lumpur,2024,Q3,Sep,3964
+W.P Labuan,2024,Q3,Sep,2000
+W.P Putrajaya,2024,Q3,Sep,2500
+Johor,2024,Q4,Oct,2500
+Kedah,2024,Q4,Oct,1930.305
+Kelantan,2024,Q4,Oct,1663.64
+Melaka,2024,Q4,Oct,2500
+Negeri Sembilan,2024,Q4,Oct,2381.82
+Pahang,2024,Q4,Oct,2100
+Perak,2024,Q4,Oct,2063.64
+Perlis,2024,Q4,Oct,1681.82
+Pulau Pinang,2024,Q4,Oct,2827.27
+Sabah,2024,Q4,Oct,1900
+Sarawak ,2024,Q4,Oct,2063.64
+Selangor,2024,Q4,Oct,3000
+Terengganu,2024,Q4,Oct,2000
+W.P Kuala Lumpur,2024,Q4,Oct,4000
+W.P Labuan,2024,Q4,Oct,2000
+W.P Putrajaya,2024,Q4,Oct,2481.82
+Johor,2024,Q4,Nov,2500
+Kedah,2024,Q4,Nov,1900
+Kelantan,2024,Q4,Nov,1627.27
+Melaka,2024,Q4,Nov,2500
+Negeri Sembilan,2024,Q4,Nov,2345.45
+Pahang,2024,Q4,Nov,2081.82
+Perak,2024,Q4,Nov,2063.64
+Perlis,2024,Q4,Nov,1681.82
+Pulau Pinang,2024,Q4,Nov,2881.82
+Sabah,2024,Q4,Nov,1881.82
+Sarawak ,2024,Q4,Nov,2063.64
+Selangor,2024,Q4,Nov,3000
+Terengganu,2024,Q4,Nov,2000
+W.P Kuala Lumpur,2024,Q4,Nov,3966.67
+W.P Labuan,2024,Q4,Nov,2000
+W.P Putrajaya,2024,Q4,Nov,2481.82
+Johor,2024,Q4,Dec,2827.27
+Kedah,2024,Q4,Dec,2063.64
+Kelantan,2024,Q4,Dec,1663.64
+Melaka,2024,Q4,Dec,2727.27
+Negeri Sembilan,2024,Q4,Dec,2545.45
+Pahang,2024,Q4,Dec,2200
+Perak,2024,Q4,Dec,2200
+Perlis,2024,Q4,Dec,1763.64
+Pulau Pinang,2024,Q4,Dec,3381.82
+Sabah,2024,Q4,Dec,2000
+Sarawak ,2024,Q4,Dec,2200
+Selangor,2024,Q4,Dec,3300
+Terengganu,2024,Q4,Dec,2100
+W.P Kuala Lumpur,2024,Q4,Dec,4200
+W.P Labuan,2024,Q4,Dec,2481.82
+W.P Putrajaya,2024,Q4,Dec,2527.27
+Johor,2025,Q1,Jan,2927
+Kedah,2025,Q1,Jan,2064
+Kelantan,2025,Q1,Jan,1700
+Melaka,2025,Q1,Jan,2700
+Negeri Sembilan,2025,Q1,Jan,2600
+Pahang,2025,Q1,Jan,2291
+Perak,2025,Q1,Jan,2382
+Perlis,2025,Q1,Jan,1800
+Pulau Pinang,2025,Q1,Jan,3300
+Sabah,2025,Q1,Jan,2045
+Sarawak ,2025,Q1,Jan,2382
+Selangor,2025,Q1,Jan,3445
+Terengganu,2025,Q1,Jan,2000
+W.P Kuala Lumpur,2025,Q1,Jan,4400
+W.P Labuan,2025,Q1,Jan,2164
+W.P Putrajaya,2025,Q1,Jan,2600
+Johor,2025,Q1,Feb,2600
+Kedah,2025,Q1,Feb,2000
+Kelantan,2025,Q1,Feb,1727
+Melaka,2025,Q1,Feb,2500
+Negeri Sembilan,2025,Q1,Feb,2482
+Pahang,2025,Q1,Feb,2200
+Perak,2025,Q1,Feb,2182
+Perlis,2025,Q1,Feb,1800
+Pulau Pinang,2025,Q1,Feb,2909
+Sabah,2025,Q1,Feb,2000
+Sarawak ,2025,Q1,Feb,2182
+Selangor,2025,Q1,Feb,3145
+Terengganu,2025,Q1,Feb,2064
+W.P Kuala Lumpur,2025,Q1,Feb,4145
+W.P Labuan,2025,Q1,Feb,2082
+W.P Putrajaya,2025,Q1,Feb,2600
+Johor,2025,Q1,Mar,2745
+Kedah,2025,Q1,Mar,2100
+Kelantan,2025,Q1,Mar,1800
+Melaka,2025,Q1,Mar,2600
+Negeri Sembilan,2025,Q1,Mar,2600
+Pahang,2025,Q1,Mar,2327
+Perak,2025,Q1,Mar,2200
+Perlis,2025,Q1,Mar,1800
+Pulau Pinang,2025,Q1,Mar,3000
+Sabah,2025,Q1,Mar,2000
+Sarawak ,2025,Q1,Mar,2227
+Selangor,2025,Q1,Mar,3300
+Terengganu,2025,Q1,Mar,2200
+W.P Kuala Lumpur,2025,Q1,Mar,4445
+W.P Labuan,2025,Q1,Mar,2100
+W.P Putrajaya,2025,Q1,Mar,2900
