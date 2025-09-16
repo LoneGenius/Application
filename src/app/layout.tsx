@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Briefcase, Layers, Compass, Home } from 'lucide-react' // added Home icon
 
 export const metadata = {
-  title: 'LaunchPad',
+  title: 'TechnologyKU',
   description: 'Discover inclusive careers, skills, and pathways',
 }
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="sticky top-0 z-50 bg-white shadow-md">
           <nav className="container mx-auto flex items-center justify-between p-4">
             <Link href="/" className="text-2xl font-bold text-indigo-600">
-              LaunchPad
+              TechnologyKu
             </Link>
             <div className="flex gap-6 text-gray-700">
               <Link href="/" className="hover:text-indigo-600 flex items-center">
