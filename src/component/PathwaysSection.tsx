@@ -25,22 +25,28 @@ export default function PathwaysSection() {
 
   return (
     <section id="pathways" className="scroll-mt-24">
-      <div className="max-w-7xl mx-auto py-16 px-6 bg-gradient-to-b from-indigo-50 to-purple-50 rounded-xl">
-        {/* Fun Banner */}
-        <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12 px-6 rounded-2xl shadow-lg mb-12 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-4xl font-extrabold mb-4"
-          >
-            🛤️ Career Pathways: Your Journey, Your Growth
-          </motion.h2>
-          <p className="text-lg opacity-90">
-            Whether you’re from STEM or Non-STEM, there are many roads to success 🚀
-          </p>
-        </section>
+      {/* ===== Full-bleed purple banner ===== */}
+      <div
+        className="
+          max-w-7xl mx-auto py-16 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl text-white
+          py-12 px-6 shadow-lg mb-12 text-center
+        "
+      >
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-extrabold mb-4"
+        >
+          🛤️ Career Pathways: Your Journey, Your Growth
+        </motion.h2>
+        <p className="text-lg opacity-90">
+          Whether you’re from STEM or Non-STEM, there are many roads to success 🚀
+        </p>
+      </div>
 
+      {/* ===== Dashboard content (no global container, just inner px-6 spacing) ===== */}
+      <div className="px-6">
         {/* Pathway Roadmaps */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {pathways.map((path, i) => (

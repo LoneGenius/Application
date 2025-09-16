@@ -31,21 +31,28 @@ export default function SkillsSection() {
 
   return (
     <section id="skills" className="scroll-mt-24">
-      <div className="max-w-7xl mx-auto py-16 px-6 bg-gradient-to-b from-purple-50 to-indigo-50 rounded-xl">
+      {/* ===== Full-bleed purple banner ===== */}
+      <div
+        className="
+          max-w-7xl mx-auto py-16 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl text-white
+          py-12 px-6 shadow-lg mb-12 text-center
+        "
+      >
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-extrabold mb-4"
+        >
+          💡 Cross-field skills can reduce the wage gap by ~30%!
+        </motion.h2>
+        <p className="text-lg opacity-90">
+          Skills are the real equalizer 🚀 Let’s explore which ones matter most.
+        </p>
+      </div>
 
-        {/* Banner */}
-        <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-12 px-6 rounded-2xl shadow-lg mb-12 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-4xl font-extrabold mb-4"
-          >
-            💡 Cross-field skills can reduce the wage gap by ~30%!
-          </motion.h2>
-          <p className="text-lg opacity-90">Skills are the real equalizer 🚀 Let’s explore which ones matter most.</p>
-        </section>
-
+      {/* ===== Section content (no global container, keep inner spacing) ===== */}
+      <div className="px-6">
         {/* Skills Distribution */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}

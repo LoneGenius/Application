@@ -29,23 +29,29 @@ export default function CareersSection() {
 
   return (
     <section id="careers" className="scroll-mt-24">
-      <div className="max-w-7xl mx-auto py-16 px-6 bg-gradient-to-b from-indigo-50 to-purple-50 rounded-xl">
-        {/* Fun Fact Banner */}
-        <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12 px-6 rounded-2xl shadow-lg mb-12 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-4xl font-extrabold mb-4"
-          >
-            💡 Did you know? STEM jobs pay up to 80% more than some Non-STEM jobs in Malaysia!
-          </motion.h2>
-          <p className="text-lg opacity-90">
-            Career choices can drastically impact salary and growth opportunities 🚀
-          </p>
-        </section>
+      {/* ===== Full-bleed purple banner ===== */}
+      <div
+        className="
+          max-w-7xl mx-auto py-16 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl text-white
+          py-12 px-6 shadow-lg mb-12 text-center
+        "
+      >
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-extrabold mb-4"
+        >
+          💡 Did you know? STEM jobs pay up to 80% more than some Non-STEM jobs in Malaysia!
+        </motion.h2>
+        <p className="text-lg opacity-90">
+          Career choices can drastically impact salary and growth opportunities 🚀
+        </p>
+      </div>
 
-        {/* Charts Section */}
+      {/* ===== Dashboard area (no global container) ===== */}
+      <div className="px-6">
+        {/* Charts grid (full width), each chart/card keeps its own inner container & ResponsiveContainer */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
           {/* Salary Comparison */}
           <motion.div
@@ -55,11 +61,16 @@ export default function CareersSection() {
             viewport={{ once: true }}
             className="bg-gradient-to-tr from-indigo-100 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
           >
-            <h3 className="text-xl font-semibold text-indigo-700 mb-4">Average Monthly Salary (MYR)</h3>
+            <h3 className="text-xl font-semibold text-indigo-700 mb-4">
+              Average Monthly Salary (MYR)
+            </h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={salaryData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#ddd" />
-                <XAxis dataKey="career" tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }} />
+                <XAxis
+                  dataKey="career"
+                  tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }}
+                />
                 <YAxis tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }} />
                 <Tooltip
                   contentStyle={{
@@ -90,11 +101,16 @@ export default function CareersSection() {
             viewport={{ once: true }}
             className="bg-gradient-to-tr from-purple-100 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
           >
-            <h3 className="text-xl font-semibold text-indigo-700 mb-4">Job Demand Growth</h3>
+            <h3 className="text-xl font-semibold text-indigo-700 mb-4">
+              Job Demand Growth
+            </h3>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={demandData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#ddd" />
-                <XAxis dataKey="year" tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }} />
+                <XAxis
+                  dataKey="year"
+                  tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }}
+                />
                 <YAxis tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }} />
                 <Tooltip
                   contentStyle={{
@@ -106,14 +122,26 @@ export default function CareersSection() {
                   }}
                   labelStyle={{ color: '#111827', fontWeight: 600 }}
                 />
-                <Line type="monotone" dataKey="STEM" stroke="#4F46E5" strokeWidth={3} dot={{ r: 5 }} />
-                <Line type="monotone" dataKey="NonSTEM" stroke="#F59E0B" strokeWidth={3} dot={{ r: 5 }} />
+                <Line
+                  type="monotone"
+                  dataKey="STEM"
+                  stroke="#4F46E5"
+                  strokeWidth={3}
+                  dot={{ r: 5 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="NonSTEM"
+                  stroke="#F59E0B"
+                  strokeWidth={3}
+                  dot={{ r: 5 }}
+                />
               </LineChart>
             </ResponsiveContainer>
           </motion.div>
         </div>
 
-        {/* Career Highlight Cards */}
+        {/* Career Highlight Cards (still full width, no outer container) */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { title: 'Software Engineer', fact: 'High demand globally with strong remote opportunities.' },
