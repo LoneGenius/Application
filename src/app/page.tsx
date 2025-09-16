@@ -36,8 +36,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-      {/* ===== Full-bleed Hero (purple) =====
-          Use the full-bleed trick to escape the container from layout.tsx */}
+      {/* ===== Full-bleed Hero (purple) ===== */}
       <section
         className="
           w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]
@@ -45,6 +44,16 @@ export default function HomePage() {
           py-24 text-center shadow-2xl mb-16
         "
       >
+        {/* ✅ Chat Button (Top Right Corner) */}
+        <div className="absolute top-6 right-6">
+          <Link
+            href="/chat"
+            className="bg-white text-indigo-700 px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+          >
+            Chat with AI
+          </Link>
+        </div>
+
         <div className="mx-auto px-6">
           <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
@@ -96,7 +105,6 @@ export default function HomePage() {
           bg-white shadow-lg rounded-none py-12 my-20
         "
       >
-        {/* Inner content width just for the cards/charts */}
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-indigo-700 mb-12">🎓 Graduates Pathways Overview</h2>
 
@@ -151,10 +159,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== Sections on the SAME page (their own internal containers kept) ===== */}
-      <CareersSection /> <b/>
-      <SkillsSection /> <b/>
-      <PathwaysSection /> <b/>
+      {/* ===== Sections on the SAME page ===== */}
+      <CareersSection /> <b />
+      <SkillsSection /> <b />
+      <PathwaysSection /> <b />
     </div>
   );
 }
