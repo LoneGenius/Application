@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/analytics" className="hover:text-indigo-600 flex items-center gap-1">
                 <Layers size={18}/> Analytics 
               </Link>
-              <Link href="/PathwaysSection" className="hover:text-indigo-600 flex items-center gap-1">
+              <Link href="/" className="hover:text-indigo-600 flex items-center gap-1">
                 <Layers size={18}/> Career Guidance
               </Link>
             </div>
