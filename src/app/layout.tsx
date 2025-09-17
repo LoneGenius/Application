@@ -21,13 +21,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/" className="hover:text-indigo-600 flex items-center gap-1">
                 <Home size={18}/>  Home
               </Link>
-              <Link href="/careers" className="hover:text-indigo-600 flex items-center gap-1">
+              <Link href="/about" className="hover:text-indigo-600 flex items-center gap-1">
                 <Briefcase size={18}/> About Us 
               </Link>
-              <Link href="/skills" className="hover:text-indigo-600 flex items-center gap-1">
+              <Link href="/analytics" className="hover:text-indigo-600 flex items-center gap-1">
                 <Layers size={18}/> Analytics 
               </Link>
-              <Link href="/skills" className="hover:text-indigo-600 flex items-center gap-1">
+              <Link href="/PathwaysSection" className="hover:text-indigo-600 flex items-center gap-1">
                 <Layers size={18}/> Career Guidance
               </Link>
             </div>
