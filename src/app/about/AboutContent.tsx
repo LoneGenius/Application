@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutContent() {
   return (
@@ -15,7 +16,7 @@ export default function AboutContent() {
             transition={{ duration: 0.6 }}
             className="text-5xl font-extrabold"
           >
-            About TechnologyKU
+            About TechnologyKu
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -29,36 +30,119 @@ export default function AboutContent() {
         </div>
       </section>
 
-      {/* Mission & Why */}
-      <section className="max-w-5xl mx-auto px-6 py-14">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white border border-indigo-100 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-indigo-700">Our Mission</h2>
-            <p className="mt-3 text-gray-700 leading-relaxed">
-              Empower students and graduates to make confident career choices by giving them accessible,
-              visually clear insights about the labour market and the skills that matter.
-            </p>
-          </div>
-          <div className="bg-white border border-indigo-100 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-indigo-700">Why We Built This</h2>
-            <p className="mt-3 text-gray-700 leading-relaxed">
-              Too many grads end up outside their fields without a map. TechnologyKU bridges that gap with
-              dashboards, pathways, and AI-guided tips—so planning your next step feels simple, not scary.
-            </p>
-          </div>
+      {/* Team Section */}
+      <section className="max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <h2 className="text-5xl font-bold text-center text-indigo-700 mb-8">Meet Our Team</h2>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            {
+              name: 'Aqilah',
+              role: 'Data Analyst',
+              img: '/team/aqilah.jpg',
+              linkedin: 'https://www.linkedin.com/',
+            },
+            {
+              name: 'Najwa',
+              role: 'UI/UX Designer',
+              img: '/team/najwa.jpg',
+              linkedin: 'https://www.linkedin.com/',
+            },
+            {
+              name: 'Damia',
+              role: 'Machine Learning Engineer',
+              img: '/team/damia.jpg',
+              linkedin: 'https://www.linkedin.com/',
+            },
+            {
+              name: 'Danish',
+              role: 'AI Engineer',
+              img: '/team/danish.jpg',
+              linkedin: 'https://www.linkedin.com/',
+            },
+          ].map((member) => (
+            <div
+              key={member.name}
+              className="bg-white border border-indigo-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition text-center"
+            >
+              <div className="w-24 h-24 mx-auto rounded-full overflow-hidden shadow mb-4">
+                <Image
+                  src={member.img}
+                  alt={member.name}
+                  width={96}
+                  height={96}
+                  className="object-cover"
+                />
+              </div>
+
+              <h3 className="text-lg font-semibold text-indigo-700">{member.name}</h3>
+              <p className="text-gray-600 text-sm">{member.role}</p>
+
+              {/* badges */}
+              <div className="mt-3 flex items-center justify-center gap-2 flex-wrap">
+                <span className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-100 px-2.5 py-1 rounded-full">
+                  UMPSA
+                </span>
+                <span className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2.5 py-1 rounded-full">
+                  Final-year student
+                </span>
+              </div>
+
+              {/* LinkedIn button */}
+              <div className="mt-4">
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium bg-white text-indigo-700 border border-indigo-200 rounded-full px-3.5 py-2 hover:bg-indigo-50 transition"
+                >
+                  <span className="inline-block w-4 h-4 rounded-[3px] bg-[#0A66C2] text-white leading-4 text-[10px] font-bold flex items-center justify-center">
+                    in
+                  </span>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Values */}
-      <section className="max-w-5xl mx-auto px-6 pb-6">
-        <h3 className="text-xl font-semibold text-indigo-700 mb-4">Our Principles</h3>
+      {/* slim divider */}
+      <div className="max-w-5xl mx-auto px-6">
+        <hr className="border-t border-indigo-100 my-6" />
+      </div>
+
+      {/* Mission & Why */}
+      <section className="max-w-4xl mx-auto px-6 pt-2 pb-14">
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl font-bold text-indigo-700">Our Mission</h2>
+          <p className="mt-4 text-gray-700 leading-relaxed text-lg text-justify">
+            Empower students and graduates to make confident career choices by giving them accessible,
+            visually clear insights about the labour market and the skills that matter.
+          </p>
+        </div>
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-indigo-700">Why We Built This</h2>
+          <p className="mt-4 text-gray-700 leading-relaxed text-lg text-justify">
+            Too many grads end up outside their fields without a map. TechnologyKU bridges that gap with
+            dashboards, pathways, and AI-guided tips—so planning your next step feels simple, not scary.
+          </p>
+        </div>
+      </section>
+
+      {/* Objectives (renamed + centered + larger like Mission) */}
+      <section className="max-w-5xl mx-auto px-6 pb-14 text-center">
+        <h2 className="text-3xl font-bold text-indigo-700 mb-8">Our Objectives</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { title: 'Inclusive by Design', text: 'Useful for both STEM and non-STEM backgrounds.' },
             { title: 'Data-Informed', text: 'We prefer charts over guesswork and buzzwords.' },
             { title: 'Actionable', text: 'Clear next steps, not overwhelming info dumps.' },
           ].map((v) => (
-            <div key={v.title} className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6">
+            <div
+              key={v.title}
+              className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 text-left"
+            >
               <p className="font-semibold text-indigo-800">{v.title}</p>
               <p className="text-gray-700 mt-2">{v.text}</p>
             </div>
