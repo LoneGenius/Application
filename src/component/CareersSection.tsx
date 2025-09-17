@@ -24,14 +24,12 @@ export default function CareersSection() {
     { year: 2024, STEM: 80, NonSTEM: 40 },
   ];
 
-  // NEW: Employment alignment (Pie)
   const employmentData = [
     { name: 'In-Field', value: 70 },
     { name: 'Out-of-Field', value: 30 },
   ];
   const COLORS = ['#4F46E5', '#F59E0B'];
 
-  // NEW: Graduate supply trend (Area)
   const supplyData = [
     { year: 2020, Graduates: 200 },
     { year: 2021, Graduates: 240 },
@@ -42,28 +40,23 @@ export default function CareersSection() {
 
   return (
     <section id="careers" className="scroll-mt-24 mb-20">
-      {/* ===== Full-bleed purple banner ===== */}
-      <div
-        className="
-          max-w-7xl mx-auto py-16 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl text-white
-          shadow-lg mb-12 text-center
-        "
-      >
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-4xl font-extrabold mb-4"
-        >
-          💡 Malaysian Labour Force: Graduates Overview
-        </motion.h2>
-        <p className="text-lg opacity-90">
-          Career choices can drastically impact salary and growth opportunities 🚀
-        </p>
-      </div>
+      {/* Header (same width as charts) */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-lg mb-12 text-center py-16 px-6">
+          <motion.h2
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-4xl font-extrabold mb-4"
+          >
+            💡 Malaysian Labour Force: Graduates Overview
+          </motion.h2>
+          <p className="text-lg opacity-90">
+            Career choices can drastically impact salary and growth opportunities 🚀
+          </p>
+        </div>
 
-      {/* ===== Dashboard area ===== */}
-      <div className="px-6">
+        {/* Charts */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
           {/* Salary Comparison */}
           <motion.div
@@ -73,12 +66,14 @@ export default function CareersSection() {
             viewport={{ once: true }}
             className="bg-gradient-to-tr from-indigo-100 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
           >
-            <h3 className="text-xl font-semibold text-indigo-700 mb-4">Average Monthly Salary (MYR)</h3>
+            <h3 className="text-xl font-semibold text-indigo-700 mb-4">
+              Average Monthly Salary (MYR)
+            </h3>
             <ResponsiveContainer width="100%" height={280}>
               <BarChart data={salaryData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#ddd" />
-                <XAxis dataKey="career" tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }} />
-                <YAxis tick={{ fill: '#111827', fontSize: 13, fontWeight: 600 }} />
+                <XAxis dataKey="career" />
+                <YAxis />
                 <Tooltip />
                 <Bar dataKey="salary" fill="url(#colorSalary)" radius={[8, 8, 0, 0]} />
                 <defs>
@@ -106,13 +101,13 @@ export default function CareersSection() {
                 <XAxis dataKey="year" />
                 <YAxis />
                 <Tooltip />
-                <Line type="monotone" dataKey="STEM" stroke="#4F46E5" strokeWidth={3} dot={{ r: 5 }} />
-                <Line type="monotone" dataKey="NonSTEM" stroke="#F59E0B" strokeWidth={3} dot={{ r: 5 }} />
+                <Line type="monotone" dataKey="STEM" stroke="#4F46E5" strokeWidth={3} dot />
+                <Line type="monotone" dataKey="NonSTEM" stroke="#F59E0B" strokeWidth={3} dot />
               </LineChart>
             </ResponsiveContainer>
           </motion.div>
 
-          {/* NEW: Employment Alignment (Pie) */}
+          {/* Employment Alignment */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +135,7 @@ export default function CareersSection() {
             </ResponsiveContainer>
           </motion.div>
 
-          {/* NEW: Graduate Supply Trend (Area) */}
+          {/* Graduate Supply Trend */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -167,27 +162,21 @@ export default function CareersSection() {
           </motion.div>
         </div>
 
-        {/* Career Highlight Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { title: 'Software Engineer', fact: 'High demand globally with strong remote opportunities.' },
-            { title: 'Data Scientist', fact: 'One of the fastest-growing STEM careers with big data boom.' },
-            { title: 'Teacher', fact: 'Essential for society, though often undervalued in pay.' },
-            { title: 'Marketing Specialist', fact: 'Blends creativity with business strategy for modern markets.' },
-          ].map((career, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2, duration: 0.6 }}
-              viewport={{ once: true }}
-              className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1 border border-indigo-100"
-            >
-              <h4 className="text-lg font-bold text-indigo-600 mb-2">{career.title}</h4>
-              <p className="text-gray-700">{career.fact}</p>
-            </motion.div>
-          ))}
-        </section>
+        {/* Interpretation card */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-white p-6 rounded-2xl shadow border border-indigo-100 text-center max-w-6xl mx-auto"
+        >
+          <h4 className="text-lg font-bold text-indigo-600 mb-2">Insights</h4>
+          <p className="text-gray-700 leading-relaxed">
+            STEM careers generally offer higher salaries and faster demand growth compared to
+            Non-STEM fields. However, a significant portion of graduates still work outside their
+            field, highlighting the importance of aligning education with job market demand.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
