@@ -1,0 +1,103 @@
+state,year,forecast_pct_unemployed,forecast_pct_employed,risk_label
+Johor,2025,6.077,93.923,1
+Johor,2026,6.077,93.923,1
+Johor,2027,6.077,93.923,1
+Johor,2028,6.077,93.923,1
+Johor,2029,6.077,93.923,1
+Johor,2030,6.077,93.923,1
+Kedah,2025,8.729,91.271,1
+Kedah,2026,8.729,91.271,1
+Kedah,2027,8.729,91.271,1
+Kedah,2028,8.729,91.271,1
+Kedah,2029,8.729,91.271,1
+Kedah,2030,8.729,91.271,1
+Kelantan,2025,10.894,89.106,1
+Kelantan,2026,10.894,89.106,1
+Kelantan,2027,10.894,89.106,1
+Kelantan,2028,10.894,89.106,1
+Kelantan,2029,10.894,89.106,1
+Kelantan,2030,10.894,89.106,1
+Melaka,2025,6.628,93.372,1
+Melaka,2026,6.628,93.372,1
+Melaka,2027,6.628,93.372,1
+Melaka,2028,6.628,93.372,1
+Melaka,2029,6.628,93.372,1
+Melaka,2030,6.628,93.372,1
+Negeri Sembilan,2025,7.068,92.932,1
+Negeri Sembilan,2026,7.068,92.932,1
+Negeri Sembilan,2027,7.068,92.932,1
+Negeri Sembilan,2028,7.068,92.932,1
+Negeri Sembilan,2029,7.068,92.932,1
+Negeri Sembilan,2030,7.068,92.932,1
+Pahang,2025,7.776,92.224,1
+Pahang,2026,7.776,92.224,1
+Pahang,2027,7.776,92.224,1
+Pahang,2028,7.776,92.224,1
+Pahang,2029,7.776,92.224,1
+Pahang,2030,7.776,92.224,1
+Pulau Pinang,2025,6.377,93.623,1
+Pulau Pinang,2026,6.377,93.623,1
+Pulau Pinang,2027,6.377,93.623,1
+Pulau Pinang,2028,6.377,93.623,1
+Pulau Pinang,2029,6.377,93.623,1
+Pulau Pinang,2030,6.377,93.623,1
+Perak,2025,8.385,91.615,1
+Perak,2026,8.385,91.615,1
+Perak,2027,8.385,91.615,1
+Perak,2028,8.385,91.615,1
+Perak,2029,8.385,91.615,1
+Perak,2030,8.385,91.615,1
+Perlis,2025,9.517,90.483,1
+Perlis,2026,9.517,90.483,1
+Perlis,2027,9.517,90.483,1
+Perlis,2028,9.517,90.483,1
+Perlis,2029,9.517,90.483,1
+Perlis,2030,9.517,90.483,1
+Selangor,2025,6.088,93.912,1
+Selangor,2026,6.088,93.912,1
+Selangor,2027,6.088,93.912,1
+Selangor,2028,6.088,93.912,1
+Selangor,2029,6.088,93.912,1
+Selangor,2030,6.088,93.912,1
+Terengganu,2025,9.858,90.142,1
+Terengganu,2026,9.858,90.142,1
+Terengganu,2027,9.858,90.142,1
+Terengganu,2028,9.858,90.142,1
+Terengganu,2029,9.858,90.142,1
+Terengganu,2030,9.858,90.142,1
+Sabah,2025,11.046,88.954,1
+Sabah,2026,11.046,88.954,1
+Sabah,2027,11.046,88.954,1
+Sabah,2028,11.046,88.954,1
+Sabah,2029,11.046,88.954,1
+Sabah,2030,11.046,88.954,1
+Sarawak,2025,9.887,90.113,1
+Sarawak,2026,9.887,90.113,1
+Sarawak,2027,9.887,90.113,1
+Sarawak,2028,9.887,90.113,1
+Sarawak,2029,9.887,90.113,1
+Sarawak,2030,9.887,90.113,1
+Wilayah Persekutuan Kuala Lumpur,2025,5.923,94.077,1
+Wilayah Persekutuan Kuala Lumpur,2026,5.923,94.077,1
+Wilayah Persekutuan Kuala Lumpur,2027,5.923,94.077,1
+Wilayah Persekutuan Kuala Lumpur,2028,5.923,94.077,1
+Wilayah Persekutuan Kuala Lumpur,2029,5.923,94.077,1
+Wilayah Persekutuan Kuala Lumpur,2030,5.923,94.077,1
+Wilayah Persekutuan Labuan,2025,5.979,94.021,1
+Wilayah Persekutuan Labuan,2026,5.979,94.021,1
+Wilayah Persekutuan Labuan,2027,5.979,94.021,1
+Wilayah Persekutuan Labuan,2028,5.979,94.021,1
+Wilayah Persekutuan Labuan,2029,5.979,94.021,1
+Wilayah Persekutuan Labuan,2030,5.979,94.021,1
+Wilayah Persekutuan Putrajaya,2025,4.614,95.386,1
+Wilayah Persekutuan Putrajaya,2026,4.614,95.386,1
+Wilayah Persekutuan Putrajaya,2027,4.614,95.386,1
+Wilayah Persekutuan Putrajaya,2028,4.614,95.386,1
+Wilayah Persekutuan Putrajaya,2029,4.614,95.386,1
+Wilayah Persekutuan Putrajaya,2030,4.614,95.386,1
+Luar Negara,2025,2.146,97.854,0
+Luar Negara,2026,2.146,97.854,0
+Luar Negara,2027,2.146,97.854,0
+Luar Negara,2028,2.146,97.854,0
+Luar Negara,2029,2.146,97.854,0
+Luar Negara,2030,2.146,97.854,0

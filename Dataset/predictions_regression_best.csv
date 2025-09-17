@@ -1,0 +1,26 @@
+year,field,total,pct_unemployed,pred_pct_unemployed,pred_risk_flag_3pct,pred_risk_label,model
+2020,Arts & Humanities,19909,39.8,39.8,1,At Risk,XGBRegressor
+2020,Education,13445,31.1,31.1,1,At Risk,XGBRegressor
+2020,Services,19240,36.6,36.6,1,At Risk,XGBRegressor
+2020,"Social Sciences, Journalism & Information",80252,40.4,40.4,1,At Risk,XGBRegressor
+2021,Arts & Humanities,23775,40.1,40.1,1,At Risk,XGBRegressor
+2021,Education,17905,35.0,35.0,1,At Risk,XGBRegressor
+2021,Services,20252,36.8,36.8,1,At Risk,XGBRegressor
+2021,"Social Sciences, Journalism & Information",94088,40.1,40.1,1,At Risk,XGBRegressor
+2022,Arts & Humanities,25746,33.0,33.0,1,At Risk,XGBRegressor
+2022,"Business, Administration & Law",85734,32.1,32.1,1,At Risk,XGBRegressor
+2022,Education,17630,22.1,22.1,1,At Risk,XGBRegressor
+2022,Services,18815,29.2,29.2,1,At Risk,XGBRegressor
+2022,"Social Sciences, Journalism & Information",14953,27.9,27.9,1,At Risk,XGBRegressor
+2023,Arts & Humanities,26971,36.5,36.5,1,At Risk,XGBRegressor
+2023,"Business, Administration and Law",85300,31.3,31.3,1,At Risk,XGBRegressor
+2023,Education,21284,29.1,29.1,1,At Risk,XGBRegressor
+2023,Generic Programmes and Qualifications,68,19.1,19.1,1,At Risk,XGBRegressor
+2023,Services,20034,31.4,31.4,1,At Risk,XGBRegressor
+2023,"Social Sciences, Journalism and Information",13744,30.8,30.8,1,At Risk,XGBRegressor
+2024,Arts & Humanities,19019,9.2,9.2,1,At Risk,XGBRegressor
+2024,"Business, Administration and Law",61442,7.8,7.8,1,At Risk,XGBRegressor
+2024,Education,20003,10.2,10.2,1,At Risk,XGBRegressor
+2024,Generic Programmes and Qualifications,43,9.3,9.3,1,At Risk,XGBRegressor
+2024,Services,14080,10.1,10.1,1,At Risk,XGBRegressor
+2024,"Social Sciences, Journalism and Information",12280,9.2,9.2,1,At Risk,XGBRegressor
