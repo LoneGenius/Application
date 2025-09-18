@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Briefcase, Layers, Compass, Home } from 'lucide-react' // added Home icon
 
 export const metadata = {
-  title: 'TechnologyKU',
+  title: 'TechnologyKu',
   description: 'Discover inclusive careers, skills, and pathways',
 }
 
@@ -18,17 +18,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               TechnologyKu
             </Link>
             <div className="flex gap-6 text-gray-700">
-              <Link href="/" className="hover:text-indigo-600 flex items-center">
-                <Home size={20} />
+              <Link href="/" className="hover:text-indigo-600 flex items-center gap-1">
+                <Home size={18}/>  Home
               </Link>
-              <Link href="/careers" className="hover:text-indigo-600 flex items-center gap-1">
-                <Briefcase size={18}/> Careers
+              <Link href="/about" className="hover:text-indigo-600 flex items-center gap-1">
+                <Briefcase size={18}/> About Us 
               </Link>
-              <Link href="/skills" className="hover:text-indigo-600 flex items-center gap-1">
-                <Layers size={18}/> Skills
+              <Link href="/analytics" className="hover:text-indigo-600 flex items-center gap-1">
+                <Layers size={18}/> Analytics 
               </Link>
-              <Link href="/pathways" className="hover:text-indigo-600 flex items-center gap-1">
-                <Compass size={18}/> Pathways
+              <Link href="/" className="hover:text-indigo-600 flex items-center gap-1">
+                <Layers size={18}/> Career Guidance
               </Link>
             </div>
           </nav>
