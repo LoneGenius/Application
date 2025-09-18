@@ -35,31 +35,30 @@ export default function AboutContent() {
         <h2 className="text-5xl font-bold text-center text-indigo-700 mb-8">Meet Our Team</h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            {
-              name: 'Aqilah',
-              role: 'Data Scientist',
-              img: '/team/aqilah.jpg',
-              linkedin: 'https://www.linkedin.com/in/aqilahmaisarah/',
-            },
-            {
-              name: 'Najwa',
-              role: 'Software Engineer',
-              img: '/team/najwa.jpg',
-              linkedin: 'https://www.linkedin.com/in/nurul-najwa-302519267/',
-            },
-            {
-              name: 'Damia',
-              role: 'ML Engineer',
-              img: '/team/damia.jpg',
-              linkedin: 'https://www.linkedin.com/in/almira-damia/',
-            },
-            {
-              name: 'Danish',
-              role: 'AI Engineer',
-              img: '/team/danish.jpg',
-              linkedin: 'https://www.linkedin.com/in/muhammad-danish-aiman-hariss-2475132b8/',
-            },
+          {[{
+            name: 'Aqilah',
+            role: 'Data Scientist',
+            img: '/team/aqilah.jpg',
+            linkedin: 'https://www.linkedin.com/in/aqilahmaisarah/',
+          },
+          {
+            name: 'Najwa',
+            role: 'Software Engineer',
+            img: '/team/najwa.jpg',
+            linkedin: 'https://www.linkedin.com/in/nurul-najwa-302519267/',
+          },
+          {
+            name: 'Damia',
+            role: 'ML Engineer',
+            img: '/team/damia.jpg',
+            linkedin: 'https://www.linkedin.com/in/almira-damia/',
+          },
+          {
+            name: 'Danish',
+            role: 'AI Engineer',
+            img: '/team/danish.jpg',
+            linkedin: 'https://www.linkedin.com/in/muhammad-danish-aiman-hariss-2475132b8/',
+          }
           ].map((member) => (
             <div
               key={member.name}
@@ -134,10 +133,9 @@ export default function AboutContent() {
       <section className="max-w-5xl mx-auto px-6 pb-14 text-center">
         <h2 className="text-3xl font-bold text-indigo-700 mb-8">Our Objectives</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { title: 'To analyse', text: 'employment rates differences between STEM and non-STEM fields.' },
-            { title: 'To predict', text: 'which groups of non-STEM fields for graduates are at risk of unemployment using machine leaning models.' },
-            { title: 'To design', text: 'a dashboard and an AI-driven recommendation engine that demonstrates how AI/ML can recommend inclusive pathways for non-STEM graduates.' },
+          {[{ title: 'To analyse', text: 'employment rates differences between STEM and non-STEM fields.' },
+          { title: 'To predict', text: 'which groups of non-STEM fields for graduates are at risk of unemployment using machine leaning models.' },
+          { title: 'To design', text: 'a dashboard and an AI-driven recommendation engine that demonstrates how AI/ML can recommend inclusive pathways for non-STEM graduates.' },
           ].map((v) => (
             <div
               key={v.title}
@@ -147,6 +145,24 @@ export default function AboutContent() {
               <p className="text-gray-700 mt-2">{v.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Methodology */}
+      <section className="max-w-5xl mx-auto px-6 py-10">
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl p-8 text-center shadow-md">
+          <h4 className="text-2xl font-bold">Methodology</h4>
+          <p className="mt-2 text-white/95">
+            Learn about the frameworks we use for predicting unemployment risk and recommending career pathways.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="/framework"  // Link to the Methodology page
+              className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full shadow hover:shadow-md hover:-translate-y-0.5 transition"
+            >
+              Go to Methodology
+            </Link>
+          </div>
         </div>
       </section>
 
