@@ -14,7 +14,7 @@ export default function AboutContent() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl font-extrabold"
+            className="text-6xl font-extrabold leading-snug bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500 bg-clip-text text-transparent"
           >
             About TechnologyKu
           </motion.h1>
@@ -38,27 +38,27 @@ export default function AboutContent() {
           {[
             {
               name: 'Aqilah',
-              role: 'Data Analyst',
+              role: 'Data Scientist',
               img: '/team/aqilah.jpg',
-              linkedin: 'https://www.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/aqilahmaisarah/',
             },
             {
               name: 'Najwa',
-              role: 'UI/UX Designer',
+              role: 'Software Engineer',
               img: '/team/najwa.jpg',
-              linkedin: 'https://www.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/nurul-najwa-302519267/',
             },
             {
               name: 'Damia',
-              role: 'Machine Learning Engineer',
+              role: 'ML Engineer',
               img: '/team/damia.jpg',
-              linkedin: 'https://www.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/almira-damia/',
             },
             {
               name: 'Danish',
               role: 'AI Engineer',
               img: '/team/danish.jpg',
-              linkedin: 'https://www.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/muhammad-danish-aiman-hariss-2475132b8/',
             },
           ].map((member) => (
             <div
@@ -135,9 +135,9 @@ export default function AboutContent() {
         <h2 className="text-3xl font-bold text-indigo-700 mb-8">Our Objectives</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { title: 'Inclusive by Design', text: 'Useful for both STEM and non-STEM backgrounds.' },
-            { title: 'Data-Informed', text: 'We prefer charts over guesswork and buzzwords.' },
-            { title: 'Actionable', text: 'Clear next steps, not overwhelming info dumps.' },
+            { title: 'To analyse', text: 'employment rates differences between STEM and non-STEM fields.' },
+            { title: 'To predict', text: 'which groups of non-STEM fields for graduates are at risk of unemployment using machine leaning models.' },
+            { title: 'To design', text: 'a dashboard and an AI-driven recommendation engine that demonstrates how AI/ML can recommend inclusive pathways for non-STEM graduates.' },
           ].map((v) => (
             <div
               key={v.title}
