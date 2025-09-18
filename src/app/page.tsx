@@ -30,7 +30,7 @@ export default function HomePage() {
             transition={{ duration: 1 }}
             className="text-6xl font-extrabold leading-snug bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500 bg-clip-text text-transparent"
           >
-            TechnologyKU
+            TechnologyKu
           </motion.h1>
 
           <motion.p

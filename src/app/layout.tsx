@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Briefcase, Layers, Compass, Home } from 'lucide-react' // added Home icon
 
 export const metadata = {
-  title: 'TechnologyKU',
+  title: 'TechnologyKu',
   description: 'Discover inclusive careers, skills, and pathways',
 }
 
