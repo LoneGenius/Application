@@ -60,7 +60,7 @@ export default function AnalysisPage() {
           >
             <iframe
               title="TechnologyKU Analytics"
-              src="https://app.powerbi.com/view?r=eyJrIjoiZGNiZTU0YzAtYTYxOS00MjMzLWI0ZjItZGEzMmRjOTFjZGI2IiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D"
+              src="https://app.powerbi.com/view?r=eyJrIjoiNmMzMGQzMzEtNThiZi00YmUxLWE1NmUtMjZiMzFhZDQ2ZmVjIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D"
               className="absolute inset-0 w-full h-full"
               frameBorder={0}
               allowFullScreen
