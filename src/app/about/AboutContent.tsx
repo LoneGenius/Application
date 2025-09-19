@@ -116,7 +116,7 @@ export default function AboutContent() {
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-bold text-indigo-700">Mission</h2>
           <p className="mt-4 text-gray-700 leading-relaxed text-lg text-justify">
-            We aim to provide equal opportunities for all graduates. While most graduates come from non-STEM fields and show relatively higher employability, their unemployment rates remain above the 3% risk threshold. This highlights the need for targeted support to ensure both STEM and non-STEM graduates can access sustainable career pathways.
+            Our mission is to create equal opportunities and ensure a decent standard of living for all Malaysians, focusing on STEM categories. Guided by the Thirteenth Malaysia Plan (RMK-13), we are committed to bridging skills gaps through inclusive education, fair employment, and digital empowerment. This mission supports SDG 8: Decent Work and Economic Growth and SDG 10: Reduced Inequalities, ensuring that every graduate can thrive in a sustainable and dignified future — even in today’s fast-paced digitalisation era.
           </p>
         </div>
         <div className="text-center">
