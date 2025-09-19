@@ -2,4 +2,8 @@ node_modules
 .next
 .env
 .DS_Store
+<<<<<<< HEAD
 *:Zone.Identifier
+=======
+/public/embeddings.json
+>>>>>>> add-chatbot
