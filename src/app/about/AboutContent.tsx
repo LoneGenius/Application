@@ -114,28 +114,26 @@ export default function AboutContent() {
       {/* Mission & Why */}
       <section className="max-w-4xl mx-auto px-6 pt-2 pb-14">
         <div className="mb-10 text-center">
-          <h2 className="text-3xl font-bold text-indigo-700">Our Mission</h2>
+          <h2 className="text-3xl font-bold text-indigo-700">Mission</h2>
           <p className="mt-4 text-gray-700 leading-relaxed text-lg text-justify">
-            Empower students and graduates to make confident career choices by giving them accessible,
-            visually clear insights about the labour market and the skills that matter.
+            We aim to provide equal opportunities for all graduates. While most graduates come from non-STEM fields and show relatively higher employability, their unemployment rates remain above the 3% risk threshold. This highlights the need for targeted support to ensure both STEM and non-STEM graduates can access sustainable career pathways.
           </p>
         </div>
         <div className="text-center">
           <h2 className="text-3xl font-bold text-indigo-700">Why We Built This</h2>
           <p className="mt-4 text-gray-700 leading-relaxed text-lg text-justify">
-            Too many grads end up outside their fields without a map. TechnologyKU bridges that gap with
-            dashboards, pathways, and AI-guided tips—so planning your next step feels simple, not scary.
+            STEM grads race ahead while many non-STEM grads are stuck in mismatched jobs. That gap holds back fair growth for everyone. Our dashboard and chatbot turn the odds around—with clear insights, career paths, and smart guidance to help grads move forward with confidence.
           </p>
         </div>
       </section>
 
       {/* Objectives (renamed + centered + larger like Mission) */}
       <section className="max-w-5xl mx-auto px-6 pb-14 text-center">
-        <h2 className="text-3xl font-bold text-indigo-700 mb-8">Our Objectives</h2>
+        <h2 className="text-3xl font-bold text-indigo-700 mb-8">Objectives</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[{ title: 'To analyse', text: 'employment rates differences between STEM and non-STEM fields.' },
-          { title: 'To predict', text: 'which groups of non-STEM fields for graduates are at risk of unemployment using machine leaning models.' },
-          { title: 'To design', text: 'a dashboard and an AI-driven recommendation engine that demonstrates how AI/ML can recommend inclusive pathways for non-STEM graduates.' },
+          { title: 'To predict', text: 'which STEM categories for graduates are at risk of unemployment using machine leaning models.' },
+          { title: 'To design', text: 'a dashboard and an AI-driven recommendation engine that demonstrates how AI/ML can recommend pathways for graduates.' },
           ].map((v) => (
             <div
               key={v.title}
@@ -150,36 +148,62 @@ export default function AboutContent() {
 
       {/* Methodology */}
       <section className="max-w-5xl mx-auto px-6 py-10">
-        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl p-8 text-center shadow-md">
-          <h4 className="text-2xl font-bold">Methodology</h4>
-          <p className="mt-2 text-white/95">
-            Learn about the frameworks we use for predicting unemployment risk and recommending career pathways.
-          </p>
-          <div className="mt-6">
-            <Link
-              href="/framework"  // Link to the Methodology page
-              className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full shadow hover:shadow-md hover:-translate-y-0.5 transition"
-            >
-              Go to Methodology
-            </Link>
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl p-8 text-center flex items-center justify-between">
+          <div className="w-full sm:w-1/2 pr-6">
+            <h4 className="text-2xl font-bold mb-4">Methodology</h4>
+            <p className="mt-2 text-white/95">
+              Learn about the frameworks we use for predicting unemployment risk and recommending career pathways.
+            </p>
+            <div className="mt-6">
+              <Link
+                href="/framework"  // Link to the Methodology page
+                className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full shadow hover:shadow-md hover:-translate-y-0.5 transition"
+              >
+                Go to Methodology
+              </Link>
+            </div>
+          </div>
+
+          <div className="w-full sm:w-1/2 pl-6 flex justify-center">
+            {/* Illustration for Methodology */}
+            <div style={{ paddingBottom: '56.25%' }} className="w-full h-0 relative">
+              <img
+                src="/image/method.jpeg"  // Path to your illustration
+                alt="Methodology"
+                className="absolute inset-0 w-full h-full object-cover rounded-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="max-w-5xl mx-auto px-6 py-10">
-        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl p-8 text-center shadow-md">
-          <h4 className="text-2xl font-bold">Explore Our Dashboards</h4>
-          <p className="mt-2 text-white/95">
-            Compare salaries, skills, and pathways—then plan your next move with confidence.
-          </p>
-          <div className="mt-6">
-            <Link
-              href="/analytics"
-              className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full shadow hover:shadow-md hover:-translate-y-0.5 transition"
-            >
-              Go to Analytics
-            </Link>
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl p-8 text-center flex items-center justify-between">
+          <div className="w-full sm:w-1/2 pr-6">
+            <h4 className="text-2xl font-bold mb-4">Explore Our Dashboards</h4>
+            <p className="mt-2 text-white/95">
+              Compare salaries, skills, and pathways—then plan your next move with confidence.
+            </p>
+            <div className="mt-6">
+              <Link
+                href="/analytics"
+                className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full shadow hover:shadow-md hover:-translate-y-0.5 transition"
+              >
+                Go to Analytics
+              </Link>
+            </div>
+          </div>
+
+          <div className="w-full sm:w-1/2 pl-6 flex justify-center">
+            {/* Illustration for CTA */}
+            <div style={{ paddingBottom: '56.25%' }} className="w-full h-0 relative">
+              <img
+                src="/image/dashboard.jpeg"  // Path to your illustration
+                alt="Dashboards"
+                className="absolute inset-0 w-full h-full object-cover rounded-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
