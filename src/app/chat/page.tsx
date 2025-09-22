@@ -1,99 +1,134 @@
 'use client';
 
-import { useChat } from '@ai-sdk/react';
-import { DefaultChatTransport } from 'ai';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-export default function Page() {
-  const { messages, sendMessage, status } = useChat({
-    transport: new DefaultChatTransport({
-      api: '/api/chat',
-    }),
-  });
-
+export default function ChatPage() {
+  const [messages, setMessages] = useState<{ role: string; content: string }[]>([]);
   const [input, setInput] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+
+  async function sendMessage(e: React.FormEvent) {
+    e.preventDefault();
+    if (!input.trim()) return;
+
+    const newMessage = { role: 'user', content: input };
+    const updatedMessages = [...messages, newMessage];
+    setMessages(updatedMessages);
+    setInput('');
+    setIsTyping(true);
+
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: updatedMessages }),
+      });
+
+      if (!res.ok) throw new Error(await res.text());
+
+      const reader = res.body?.getReader();
+      if (!reader) return;
+
+      const decoder = new TextDecoder();
+      let assistantReply = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        const chunk = decoder.decode(value, { stream: true });
+        const lines = chunk.split('\n').filter((line) => line.trim().startsWith('data:'));
+
+        for (const line of lines) {
+          const data = line.replace('data: ', '').trim();
+          if (data === '[DONE]') {
+            setIsTyping(false);
+            break;
+          }
+          try {
+            const json = JSON.parse(data);
+            const delta = json.choices?.[0]?.delta?.content || '';
+            assistantReply += delta;
+            setMessages([...updatedMessages, { role: 'assistant', content: assistantReply }]);
+          } catch {}
+        }
+      }
+    } catch (err) {
+      console.error(err);
+      setIsTyping(false);
+    }
+  }
 
   return (
-    <div className="min-h-screen bg-white" style={{ fontFamily: "'Poppins', sans-serif" }}> {/* Header */} <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 shadow-lg mb-10"> <div className="max-w-5xl mx-auto px-6 text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-6xl font-extrabold leading-snug bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500 bg-clip-text text-transparent"
-          >
-            AI-Ku Chatbot
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="mt-4 text-lg text-white/95 max-w-3xl mx-auto"
-          >
-            Your friendly reskilling companion — explore new skills, discover AI tools, and stay employable in the future of work.
-          </motion.p>
-        </div>
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 p-6 font-[Poppins]">
+      {/* Header */}
+      <section className="max-w-3xl mx-auto text-center mb-8">
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500"
+        >
+          🤖 AI-Ku Chatbot
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed"
+        >
+          Your friendly reskilling companion. Type your question clearly or select a topic, such as career paths, skill development, or industry trends, to get personalized advice.
+        </motion.p>
       </section>
 
-      {/* DISCLAIMER SECTION */}
-      <div className="max-w-4xl mx-auto px-6 mb-10 text-center bg-indigo-50 p-6 rounded-lg shadow-lg">
-        <p className="text-gray-700 text-lg">
-          This chatbot helps recommend reskilling ideas and tools to improve your career. Use it as an advisor, not a replacement for professional career advice. Type your question for personalized recommendations on career paths, skill development, or industry trends.
-        </p>
-      </div>
-
-      {/* CHATBOX SECTION */}
-      <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl flex flex-col overflow-hidden border border-gray-200">
-        <div className="flex-1 p-6 space-y-4 overflow-y-auto h-[500px]">
-          {messages.map((message) => (
-            <div
-              key={message.id}
-              className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
+      {/* Chat Box */}
+      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 mb-4">
+        <div className="flex-1 p-6 overflow-y-auto h-[500px] space-y-4">
+          {messages.map((msg, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2 }}
+              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`px-4 py-2 rounded-2xl max-w-xs ${
-                  message.role === 'user'
-                    ? 'bg-yellow-300 text-gray-800 rounded-br-none'
-                    : 'bg-gray-100 text-gray-900 rounded-bl-none'
+                className={`px-4 py-2 rounded-2xl max-w-[75%] shadow-md text-sm md:text-base leading-relaxed ${
+                  msg.role === 'user'
+                    ? 'bg-blue-600 text-white rounded-br-none'
+                    : 'bg-gray-100 text-gray-800 rounded-bl-none'
                 }`}
               >
-                {message.parts.map((part, index) =>
-                  part.type === 'text' ? (
-                    <span key={index}>{part.text}</span>
-                  ) : null
-                )}
+                {msg.content}
               </div>
-            </div>
+            </motion.div>
           ))}
+          {isTyping && (
+            <div className="flex items-center space-x-1 ml-2 mt-2">
+              <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></span>
+              <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce delay-150"></span>
+              <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce delay-300"></span>
+            </div>
+          )}
         </div>
 
-        {/* INPUT BOX */}
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            if (input.trim()) {
-              sendMessage({ text: input });
-              setInput('');
-            }
-          }}
-          className="flex border-t border-gray-200 items-center p-4"
-        >
+        {/* Input Box */}
+        <form onSubmit={sendMessage} className="flex gap-2 p-4 border-t border-gray-200">
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            disabled={status !== 'ready'}
             placeholder="Type your message..."
-            className="flex-1 p-4 outline-none text-gray-700 rounded-md"
+            className="flex-1 p-4 rounded-xl shadow-sm border focus:ring-2 focus:ring-blue-400 outline-none text-gray-900"
           />
           <button
             type="submit"
-            disabled={status !== 'ready'}
-            className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition disabled:opacity-50"
+            disabled={isTyping}
+            className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white px-5 py-3 rounded-xl shadow-md font-semibold transition"
           >
             Send
           </button>
         </form>
       </div>
-    </div>
+    </main>
   );
 }
